@@ -1,2 +1,12 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=30C7718C_002DC1CE_002D4DD1_002DA33C_002DC24831A8FC3A_002Ff_003ADateTimeValidatorTests_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4572b209_002D194c_002D450b_002Da15d_002Dc7ca3c77a6b7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Solution /&gt;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	
+	
+	
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=Trackr/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

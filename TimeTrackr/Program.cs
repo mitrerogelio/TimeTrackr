@@ -1,19 +1,34 @@
-﻿using TimeTrackr;
+﻿using TimeTrackr.Interfaces;
+using TimeTrackr.Services;
+using TimeTrackr.Utilities;
 
-while (true) // Infinite loop
+namespace TimeTrackr;
+
+internal static class Program
 {
-    Console.WriteLine("\nEnter 'start' to input times, 'exit' to quit, or anything else to continue running.");
-
-    string? command = Console.ReadLine();
-
-    if (command != null && command.Equals("exit", StringComparison.OrdinalIgnoreCase))
+    private static void Main()
     {
-        Console.WriteLine("See you later!");
-        break;
-    }
+        IDateTimeValidator dateTimeValidator = new DateTimeValidator();
+        IConsole systemConsole = new SystemConsole();
+        IInputService inputService = new InputService(systemConsole, dateTimeValidator);
 
-    if (command != null && command.Equals("start", StringComparison.OrdinalIgnoreCase))
-    {
-        InputService.ProcessTimeInput();
+        while (true) // Infinite loop
+        {
+            systemConsole.WriteLine(
+                "\nEnter 'start' to input times, 'exit' to quit, or anything else to continue running.");
+
+            string? command = systemConsole.ReadLine();
+
+            if (command != null && command.Equals("exit", StringComparison.OrdinalIgnoreCase))
+            {
+                systemConsole.WriteLine("See you later!");
+                break;
+            }
+
+            if (command != null && command.Equals("start", StringComparison.OrdinalIgnoreCase))
+            {
+                inputService.ProcessTimeInput();
+            }
+        }
     }
 }
